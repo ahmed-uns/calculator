@@ -1,0 +1,101 @@
+@font-face {
+    font-family: digital;
+    src: url(/digital-7.ttf);
+}
+body {
+    margin: 0;
+    background-color: rgb(0, 18, 46);
+
+}
+.calculator {
+    background-color: rgb(0, 63, 122);
+    border-radius: 6%;
+    width:  30%;
+    margin: 40px auto;
+    padding: 10px ;
+    
+    
+}
+.lcd {
+    margin: 20px auto;
+    text-wrap: balance;
+        background-color: rgb(56, 119, 56);
+    border:solid rgb(55, 93, 55)  5px;
+    color: rgb(0, 39, 0);
+    width: 85%;
+    font-size : 36px ;
+    height: 70px;
+    font-family:digital;
+    
+}
+.keyboard {
+
+display: grid;
+grid-template: 1fr 1fr 1fr 1fr /1fr 1fr 1fr 1fr;
+margin: 25px;
+
+}
+.number {
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    display:flex ;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+}
+.operator {
+    padding: 15px;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+    display:flex ;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;    border-radius: 50%;
+    margin: 4px;
+
+}
+.equels {
+    padding: 15px;
+    font-size: 24px;
+    background-color: orangered;
+    color: white;
+    display:flex ;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;    border-radius: 50%;
+    margin: 4px;
+
+}
+.number:hover {
+    background-color: rgb(24, 24, 24);
+}
+.operator:hover {
+    background-color: rgb(185, 185, 185);
+}
+.equels:hover {
+    background-color: rgb(208, 55, 0);
+}
+#lcd::before {
+    border: 5px red solid;
+}
+input  {
+    color: white;
+    border-radius: 50%;
+    border: none;
+
+    box-shadow: black 1.5px 1.5px 1.5px;
+    background-color: rgb(0, 25, 66);
+    width: auto;
+    height: 3em;
+    margin: 5px;
+}
+input:last-child {
+    background-color: orangered;
+}
+input:first-child {
+    background-color: white ;
+    color: black;
+}

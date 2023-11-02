@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    
+    <div class="calculator">
+    <div class="lcd" id="lcd"  ></div>
+    <div class="keyboard">
+      <input type="button" value="AC" onclick="lcd.innerHTML=''">
+      <input type="button" value="DE" onclick="lcd.innerHTML.remove(-1)">
+      <input type="button" value="/" onclick="lcd.innerHTML +='/'">
+      <input type="button" value="*" onclick="lcd.innerHTML+='*'">
+      <input type="button" value="1" onclick="lcd.innerHTML+=1">
+      <input type="button" value="2" onclick="lcd.innerHTML+=2">
+      <input type="button" value="3" onclick="lcd.innerHTML+=3">
+      <input type="button" value="%" onclick="lcd.innerHTML+='%'">
+      <input type="button" value="4" onclick="lcd.innerHTML+=4">
+      <input type="button" value="5" onclick="lcd.innerHTML+=5">
+      <input type="button" value="6" onclick="lcd.innerHTML+=6">
+      <input type="button" value="-" onclick="lcd.innerHTML+='-'">
+      <input type="button" value="7" onclick="lcd.innerHTML+=7">
+      <input type="button" value="8" onclick="lcd.innerHTML+=8">
+      <input type="button" value="9" onclick="lcd.innerHTML+=9">
+      <input type="button" value="+" onclick="lcd.innerHTML+= `+`">
+      <input type="button" value="00" onclick="lcd.innerHTML+= '00'">
+      <input type="button" value="0" onclick="lcd.innerHTML+=0">
+      <input type="button" value="." onclick="lcd.innerHTML+='.'">
+      <input type="button" value="=" onclick="lcd.innerHTML = eval(lcd.innerHTML)">
+    </div>
+</div>
+
+</body>
+</html>
